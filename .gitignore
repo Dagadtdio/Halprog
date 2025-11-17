@@ -1,2 +1,5 @@
 yolov8x.pt
+.venv/
 *.pt
+*.mp4
+__pycache__/
