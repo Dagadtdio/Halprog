@@ -16,7 +16,8 @@ if (-Not (Test-Path $activateScript)) {
 . $activateScript
 
 Write-Host "Upgrading pip ..."
-pip install --upgrade pip
+$venvPython = ".\.venv\Scripts\python.exe"
+& $venvPython -m pip install --upgrade pip
 
 Write-Host "Installing requirements from requirements.txt ..."
 pip install -r requirements.txt
